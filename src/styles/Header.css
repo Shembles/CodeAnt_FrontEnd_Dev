@@ -1,0 +1,104 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 10px 10px 0 0;
+  border: 1px solid #dee2e6;
+}
+
+.header-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.header-top {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-top h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.header-title .total-repositories {
+  font-size: 14px;
+  color: #6c757d;
+  margin-top: 5px;
+}
+
+.header-actions {
+  display: flex;
+  gap: 10px; /* Add space between buttons */
+  margin-left: auto; /* Add space below the actions */
+}
+
+@media (max-width: 768px) {
+  .header-title {
+    flex-wrap: wrap;
+    margin-right: 0;
+  }
+
+  .header-actions {
+    margin: 10px 0 0 0;
+  }
+}
+
+.search-container {
+  max-width: 800px;
+}
+
+.search-input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #ced4da;
+}
+
+.search-input {
+  width: 100%;
+  height: 26px;
+  padding: 5px 10px 5px 30px;
+  border: 1px solid #ced4da;
+  border-radius: 10px;
+}
+
+.refresh-button,
+.add-button {
+  padding: 8px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.refresh-button {
+  background-color: transparent;
+  color: #000;
+  border: 0.5px solid #000;
+}
+
+.add-button {
+  padding: 8px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  margin-left: 10px;
+  outline: none;
+  border: none;
+}
+
+.action-icon {
+  margin-right: 5px;
+  vertical-align: middle;
+}

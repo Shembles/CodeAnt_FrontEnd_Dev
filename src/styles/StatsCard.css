@@ -1,0 +1,128 @@
+/* Main Container */
+.stats-card-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  font-family: "Arial", sans-serif;
+  margin-bottom: 200px;;
+}
+
+/* Main Card */
+.main-card {
+  position: relative;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  z-index: 1;
+}
+
+.main-card .stats-logo {
+  width: 20px;
+  display: inline-flex;
+  vertical-align: middle;
+  padding: 0 10px 0;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat h2 {
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.stat p {
+  font-size: 12px;
+  color: #6c757d;
+}
+
+/* Issues Fixed Card */
+.issues-card {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 15px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  bottom: -100px; /* Adjust as needed */
+  right: 50px; /* Adjust as needed */
+  z-index: 2;
+  width: 200px;
+  text-align: left;
+}
+
+.issues-card .top-right {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-align: right;
+    margin: 7px 10px 0 0;
+  }
+
+.issues-card .icon {
+    color: #6c63ff; /* Icon color */
+    font-size: 1.4rem; /* Icon size */
+    margin-bottom: 10px;
+    background-color: #e3e1ff;
+    border-radius: 50%;
+    padding: 10px  10px 3px 10px;
+    vertical-align: middle;
+  }
+
+.issues-card h2 {
+  font-size: 2rem;
+  color: #000;
+  margin: 0 2px;
+}
+
+.issues-card p {
+  font-size: 12px;
+  color: #000;
+  margin: 10px 0 5px;
+  font-weight: 700;
+}
+
+.issues-card .growth {
+  color: #6c63ff;
+  font-weight: bold;
+  font-size: 0.9rem;
+  text-align: right;
+}
+
+.issues-card .issues-growth {
+    display: flex;
+    justify-content: space-between;
+}
+
+.issues-card .text-desc {
+    font-size: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .stats {
+    flex-direction: column;
+    gap: 15px;
+  }
+}

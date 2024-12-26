@@ -1,8 +1,23 @@
 import React from "react";
-import "./App.css";
+import {
+  Navigate,
+  Route,
+  BrowserRouter as Router,
+  Routes,
+} from "react-router-dom";
+import LoginPage from "./components/LoginPage.tsx";
+import RepositoryLayout from "./RepositoryLayout.tsx";
 
-function App() {
-  return <div className="App">App</div>;
-}
+const App: React.FC = () => {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Navigate to="/login" />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/repositories" element={<RepositoryLayout />} />
+      </Routes>
+    </Router>
+  );
+};
 
 export default App;

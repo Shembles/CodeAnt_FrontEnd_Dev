@@ -1,0 +1,226 @@
+/* Main Layout */
+.login-page {
+  display: flex;
+  min-height: 100vh;
+  font-family: "Arial", sans-serif;
+}
+
+.intro-section,
+.login-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  position: relative;
+}
+
+.intro-section {
+  background-color: #fff;
+}
+
+.intro-content {
+  text-align: center;
+  max-width: 500px;
+}
+
+.intro-content h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Login Section */
+.login-section {
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+.login-container {
+  background-color: #fff;
+  text-align: center;
+  max-width: 550px;
+  width: 100%;
+  padding: 20px 0;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container hr {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.navbar-logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat h2 {
+  font-size: 1.5rem;
+  color: #0d6efd;
+}
+
+.issues-fixed {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.issues-fixed .growth {
+  color: #28a745;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.bottom-left-image {
+  position: absolute;
+  bottom: 0; /* Adjust as needed */
+  left: 0; /* Adjust as needed */
+  width: 250px; /* Adjust as needed */
+}
+
+.logo {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin: 20px 40px;
+}
+
+.tab {
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  background: #f9f9f9;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #6c757d;
+  border-radius: 6px;
+  width: 50%;
+}
+
+.tab.active {
+  color: #fff;
+  background-color: #0d6efd;
+}
+
+.login-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 40px 100px;
+}
+
+.login-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.login-btn {
+  color: #24292e;
+  background-color: transparent;
+  margin-right: 10px;
+}
+
+.github .icon {
+  margin-right: 10px;
+  background-color: transparent;
+  color: #24292e;
+}
+
+.bitbucket .icon {
+  margin-right: 10px;
+  background-color: transparent;
+  color: #2684ff;
+}
+
+.azure .icon {
+  margin-right: 10px;
+  background-color: transparent;
+  color: #0078d4;
+}
+
+.gitlab .icon {
+  margin-right: 10px;
+  background-color: transparent;
+  color: #fc6d26;
+}
+
+.sso .icon {
+  margin-right: 10px;
+  background-color: transparent;
+}
+
+.privacy {
+  margin-top: 40px;
+  font-size: 0.8rem;
+  color: #6c757d;
+  text-align: center;
+  width: 100%;
+}
+
+.privacy-policy p {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.privacy a {
+  color: #000;
+  text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .login-page {
+    flex-direction: column;
+  }
+
+  .login-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .privacy {
+    margin-top: 20px;
+  }
+
+  .login-buttons {
+    margin: 40px 50px;
+  }
+}
+
+@media (max-width: 1025px) {
+    .intro-section {
+        display: none;
+      }
+}
