@@ -8,7 +8,13 @@ Please recieve the app as my answer for the assessment.
 
 In the project directory, you can run:
 
+### `npm install`
+
+After cloning the app, you can run npm install to install all dependencies the app needs to run.
+
 ### `npm start`
+
+run npm start to start the app
 
 Go to /login for desktop and mobile screens of the app login.
 
