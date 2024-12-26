@@ -1,5 +1,5 @@
 /* Main Container */
-.stats-card-container {
+.statsCardContainer {
   position: relative;
   width: 100%;
   max-width: 600px;
@@ -13,7 +13,7 @@
 }
 
 /* Main Card */
-.main-card {
+.mainCard {
   position: relative;
   background-color: #fff;
   border-radius: 20px;
@@ -28,7 +28,7 @@
   z-index: 1;
 }
 
-.main-card .stats-logo {
+.mainCard .statsLogo {
   width: 20px;
   display: inline-flex;
   vertical-align: middle;
@@ -58,7 +58,7 @@
 }
 
 /* Issues Fixed Card */
-.issues-card {
+.issuesCard {
   background-color: #fff;
   border-radius: 20px;
   padding: 15px;
@@ -71,7 +71,7 @@
   text-align: left;
 }
 
-.issues-card .top-right {
+.issuesCard .topRight {
     display: inline-block;
     position: absolute;
     top: 10px;
@@ -80,7 +80,7 @@
     margin: 7px 10px 0 0;
   }
 
-.issues-card .icon {
+.issuesCard .icon {
     color: #6c63ff; /* Icon color */
     font-size: 1.4rem; /* Icon size */
     margin-bottom: 10px;
@@ -90,32 +90,32 @@
     vertical-align: middle;
   }
 
-.issues-card h2 {
+.issuesCard h2 {
   font-size: 2rem;
   color: #000;
   margin: 0 2px;
 }
 
-.issues-card p {
+.issuesCard p {
   font-size: 12px;
   color: #000;
   margin: 10px 0 5px;
   font-weight: 700;
 }
 
-.issues-card .growth {
+.issuesCard .growth {
   color: #6c63ff;
   font-weight: bold;
   font-size: 0.9rem;
   text-align: right;
 }
 
-.issues-card .issues-growth {
+.issuesCard .issuesGrowth {
     display: flex;
     justify-content: space-between;
 }
 
-.issues-card .text-desc {
+.issuesCard .textDesc {
     font-size: 10px;
 }
 

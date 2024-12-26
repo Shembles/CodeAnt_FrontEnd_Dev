@@ -18,7 +18,7 @@
   transform: translateY(0);
 }
 
-.burger-button {
+.burgerButton {
   display: none;
   background: none;
   border: none;
@@ -26,63 +26,63 @@
   z-index: 1001;
 }
 
-.user-select,
-.menu-list,
-.sidebar-footer {
+.userSelect,
+.menuList,
+.sidebarFooter {
   display: block;
 }
 
-.sidebar-logo {
+.sidebarLogo {
   width: 100%;
   margin-bottom: 20px;
 }
 
-.menu-list {
+.menuList {
   list-style: none;
   padding: 0;
   flex-grow: 1;
 }
 
-.user-select {
+.userSelect {
   width: 100%;
   /* margin-bottom: 20px; */
   padding: 8px;
   border-radius: 10px;
 }
 
-.menu-list li {
+.menuList li {
   /* margin: 15px 0 15px 0; */
   cursor: pointer;
   padding: 10px 20px;
 }
 
-.menu-list li.active {
+.menuList li.active {
   background-color: #007bff;
   color: #fff;
   border-radius: 10px;
 }
 
-.sidebar-footer {
+.sidebarFooter {
   margin-top: auto;
 }
 
-.sidebar-footer p {
+.sidebarFooter p {
   cursor: pointer;
   margin: 10px 0 10px 15px;
 }
 
-.menu-icon {
+.menuIcon {
   margin-right: 10px;
   vertical-align: middle;
 }
 
-.sidebar-logo {
+.sidebarLogo {
   width: 90%; /* Adjust the width as needed */
   margin: 0 50px 20px 0; /* Center the logo and add some margin */
   display: block;
 }
 
-.mobile-navbar {
+.mobileNavbar {
   display: none;
   width: 100%;
   background-color: #fff;
@@ -97,7 +97,7 @@
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
-.navbar-logo {
+.navbarLogo {
   width: 120px;
   margin-bottom: 15px;
 }
@@ -114,20 +114,20 @@
     transform: translateY(0);
   }
 
-  .burger-button {
+  .burgerButton {
     display: block;
     margin-right: 40px;
   }
 
-  .user-select,
-  .menu-list,
-  .sidebar-footer {
+  .userSelect,
+  .menuList,
+  .sidebarFooter {
     display: none;
   }
 
-  .sidebar.open .user-select,
-  .sidebar.open .menu-list,
-  .sidebar.open .sidebar-footer {
+  .sidebar.open .userSelect,
+  .sidebar.open .menuList,
+  .sidebar.open .sidebarFooter {
     display: block;
     width: 92%;
     margin-bottom: 0;
@@ -148,15 +148,15 @@
     display: block;
   }
 
-  .mobile-navbar {
+  .mobileNavbar {
     display: flex;
   }
 
-  .sidebar-logo {
+  .sidebarLogo {
     display: none;
   }
 
-  .sidebar-footer p {
+  .sidebarFooter p {
     margin-left: 20px;
   }
 }

@@ -2,15 +2,15 @@ import React from "react";
 import { FiCircle, FiDatabase } from "react-icons/fi";
 import "../styles/RepositoryItem.css";
 
-type Props = {
+interface RepositoryItemProps {
   name: string;
   type: string;
   size: string;
   visibility: string;
   updated: string;
-};
+}
 
-const RepositoryItem: React.FC<Props> = ({
+const RepositoryItem: React.FC<RepositoryItemProps> = ({
   name,
   type,
   size,
@@ -18,29 +18,27 @@ const RepositoryItem: React.FC<Props> = ({
   updated,
 }) => {
   return (
-    <div className="repository-item">
-      <div className="repository-header">
+    <div className="repositoryItem">
+      <div className="repositoryHeader">
         <h2>{name}</h2>
-        <span className={`visibility ${visibility.toLowerCase()}`}>
+        <span className="visibility">
           {visibility}
         </span>
       </div>
-      <div className="repository-details">
+      <div className="repositoryDetails">
         <span>
           {type}
-          <span className="detail-icon dot">
+          <span className="detailIcon dot">
             <FiCircle />
           </span>
         </span>
         <span>
-          <span className="detail-icon">
+          <span className="detailIcon">
             <FiDatabase />
           </span>
           {size}
         </span>
-        <span>
-          Updated {updated}
-        </span>
+        <span>Updated {updated}</span>
       </div>
     </div>
   );

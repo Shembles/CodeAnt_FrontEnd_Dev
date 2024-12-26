@@ -1,14 +1,15 @@
 import React, { useState } from "react";
-import { FaGithub, FaBitbucket, FaGitlab } from "react-icons/fa";
-import { GoKey } from "react-icons/go";
-import { VscAzureDevops } from "react-icons/vsc";
-import logo from "../assets/CodeAnt_logo.png"; // Import the logo image
-import bottomLeftWatermark from "../assets/CodeAnt_watermark.png"; // Assuming you have an image for the bottom left corner
-import "../styles/LoginPage.css";
 import StatsCard from "./StatsCard.tsx";
+import { FaGithub, FaBitbucket, FaGitlab } from "react-icons/fa";
+import { VscAzureDevops } from "react-icons/vsc";
+import { GoKey } from "react-icons/go";
+import logo from "../assets/CodeAnt_logo.png";
+import bottomLeftWatermark from "../assets/CodeAnt_watermark.png";
+import "../styles/LoginPage.css";
 
 const LoginPage: React.FC = () => {
   const [activeTab, setActiveTab] = useState("SAAS");
+
   const statsData = {
     title: "AI to Detect & Autofix Bad Code",
     stats: [
@@ -19,10 +20,11 @@ const LoginPage: React.FC = () => {
     issuesFixed: "500K+",
     growth: "↑ 14%",
   };
+
   return (
-    <div className="login-page">
+    <div className="loginPage">
       {/* Left Section */}
-      <div className="intro-section">
+      <div className="introSection">
         <StatsCard
           title={statsData.title}
           stats={statsData.stats}
@@ -32,14 +34,14 @@ const LoginPage: React.FC = () => {
         <img
           src={bottomLeftWatermark}
           alt="CodeAnt Watermark"
-          className="bottom-left-image"
+          className="bottomLeftImage"
         />
       </div>
 
       {/* Right Section */}
-      <div className="login-section">
-        <div className="login-container">
-          <img src={logo} alt="Logo" className="navbar-logo" />
+      <div className="loginSection">
+        <div className="loginContainer">
+          <img src={logo} alt="Logo" className="navbarLogo" />
           <h2>Welcome to CodeAnt AI</h2>
           <div className="tabs">
             <button
@@ -56,28 +58,28 @@ const LoginPage: React.FC = () => {
             </button>
           </div>
           <hr />
-          <div className="login-buttons">
+          <div className="loginButtons">
             {activeTab === "SAAS" ? (
               <>
-                <button className="login-btn github">
+                <button className="loginBtn github">
                   <span className="icon">
                     <FaGithub />
                   </span>
                   Sign in with GitHub
                 </button>
-                <button className="login-btn bitbucket">
+                <button className="loginBtn bitbucket">
                   <span className="icon">
                     <FaBitbucket />
                   </span>
                   Sign in with Bitbucket
                 </button>
-                <button className="login-btn azure">
+                <button className="loginBtn azure">
                   <span className="icon">
                     <VscAzureDevops />
                   </span>
                   Sign in with Azure DevOps
                 </button>
-                <button className="login-btn gitlab">
+                <button className="loginBtn gitlab">
                   <span className="icon">
                     <FaGitlab />
                   </span>
@@ -86,13 +88,13 @@ const LoginPage: React.FC = () => {
               </>
             ) : (
               <>
-                <button className="login-btn gitlab">
+                <button className="loginBtn gitlab">
                   <span className="icon">
                     <FaGitlab />
                   </span>
                   Self Hosted GitLab
                 </button>
-                <button className="login-btn sso">
+                <button className="loginBtn sso">
                   <span className="icon">
                     <GoKey />
                   </span>

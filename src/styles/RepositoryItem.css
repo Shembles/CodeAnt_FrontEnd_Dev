@@ -1,24 +1,24 @@
-.repository-item {
+.repositoryItem {
     background-color: #fff;
     border: 1px solid #ddd;
     padding: 15px;
   }
 
-  .repository-item:hover {
+  .repositoryItem:hover {
     background-color: rgb(243, 243, 244);
     cursor: pointer;
   }
 
-  .repository-item:last-child {
+  .repositoryItem:last-child {
     border-radius: 0 0 10px 10px; /* Change border-radius for the last child */
   }
   
-  .repository-header {
+  .repositoryHeader {
     display: flex;
     margin: 0 0 20px 0;
   }
 
-  .repository-header h2 {
+  .repositoryHeader h2 {
     font-size: 18px;
     margin: 0 10px;
   }
@@ -33,7 +33,7 @@
     color: #489cf7;
   }
   
-  .repository-details {
+  .repositoryDetails {
     display: flex;
     margin: 0 20px 0 0;
     font-size: 0.8em;
@@ -41,23 +41,23 @@
   }
 
   @media (max-width: 768px) {
-    .repository-details {
+    .repositoryDetails {
       font-size: 8px;
     }
   }
 
-  .repository-details .dot {
+  .repositoryDetails .dot {
     font-size: 8px;
     color: #489cf7;
     background-color: #489cf7;
     border-radius: 50%;
   }
 
-  .repository-details span {
+  .repositoryDetails span {
     margin: 0 8px;
   }
 
-  .detail-icon {
+  .detailIcon {
     margin-right: 3px;
     vertical-align: middle;
   }

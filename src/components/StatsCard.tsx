@@ -1,6 +1,6 @@
 import React from "react";
-import "../styles/StatsCard.css";
 import { HiChartPie } from "react-icons/hi";
+import "../styles/StatsCard.css";
 import logo from "../assets/CodeAnt_mini_logo.png";
 
 interface StatsCardProps {
@@ -17,10 +17,10 @@ const StatsCard: React.FC<StatsCardProps> = ({
   growth,
 }) => {
   return (
-    <div className="stats-card-container">
+    <div className="statsCardContainer">
       {/* Main Card */}
-      <div className="main-card">
-        <img src={logo} alt="Logo" className="stats-logo" />
+      <div className="mainCard">
+        <img src={logo} alt="Logo" className="statsLogo" />
         <span>{title}</span>
         <hr />
         <div className="stats">
@@ -34,10 +34,10 @@ const StatsCard: React.FC<StatsCardProps> = ({
       </div>
 
       {/* Issues Fixed Card */}
-      <div className="issues-card">
-        <div className="top-right">
+      <div className="issuesCard">
+        <div className="topRight">
           <span className="growth">{growth}</span>
-          <p className="text-desc">This week</p>
+          <p className="textDesc">This week</p>
         </div>
         <span className="icon">
           <HiChartPie />

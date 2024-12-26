@@ -11,9 +11,15 @@ import {
   FiX,
 } from "react-icons/fi";
 import "../styles/Sidebar.css";
-import logo from "../assets/CodeAnt_logo.png"; // Import the logo image
+import logo from "../assets/CodeAnt_logo.png";
 
-const Sidebar: React.FC = () => {
+interface SidebarProps {
+  user: string;
+  onLogout: () => void;
+  onMenuItemClick: (item: string) => void;
+}
+
+const Sidebar: React.FC<SidebarProps> = ({ user, onLogout, onMenuItemClick }) => {
   const [activeItem, setActiveItem] = useState<string>("Repositories");
   const [isOpen, setIsOpen] = useState(false);
 
@@ -21,78 +27,83 @@ const Sidebar: React.FC = () => {
     setIsOpen(!isOpen);
   };
 
+  const handleMenuItemClick = (item: string) => {
+    setActiveItem(item);
+    onMenuItemClick(item);
+  };
+
   return (
     <>
-      <div className="mobile-navbar">
-        <img src={logo} alt="Logo" className="navbar-logo" />
-        <button className="burger-button" onClick={toggleSidebar}>
+      <div className="mobileNavbar">
+        <img src={logo} alt="Logo" className="navbarLogo" />
+        <button className="burgerButton" onClick={toggleSidebar}>
           {isOpen ? <FiX /> : <FiMenu />}
         </button>
       </div>
       <nav className={`sidebar ${isOpen ? "open" : ""}`}>
-        <img src={logo} alt="Logo" className="sidebar-logo" />
-        <select className="user-select">
-          <option>UtkarshDhairyaPathak</option>
+        <img src={logo} alt="Logo" className="sidebarLogo" />
+        <select className="userSelect">
+          <option>{user}</option>
         </select>
-        <ul className="menu-list">
+        <ul className="menuList">
           <li
             className={activeItem === "Repositories" ? "active" : ""}
-            onClick={() => setActiveItem("Repositories")}
+            onClick={() => handleMenuItemClick("Repositories")}
           >
-            <span className="menu-icon">
+            <span className="menuIcon">
               <FiHome />
             </span>
             Repositories
           </li>
           <li
             className={activeItem === "AI Code Review" ? "active" : ""}
-            onClick={() => setActiveItem("AI Code Review")}
+            onClick={() => handleMenuItemClick("AI Code Review")}
           >
-            <span className="menu-icon">
+            <span className="menuIcon">
               <FiCode />
             </span>
             AI Code Review
           </li>
           <li
             className={activeItem === "Cloud Security" ? "active" : ""}
-            onClick={() => setActiveItem("Cloud Security")}
+            onClick={() => handleMenuItemClick("Cloud Security")}
           >
-            <span className="menu-icon">
+            <span className="menuIcon">
               <FiCloud />
             </span>
             Cloud Security
           </li>
           <li
             className={activeItem === "How to Use" ? "active" : ""}
-            onClick={() => setActiveItem("How to Use")}
+            onClick={() => handleMenuItemClick("How to Use")}
           >
-            <span className="menu-icon">
+            <span className="menuIcon">
               <FiBook />
             </span>
             How to Use
           </li>
           <li
             className={activeItem === "Settings" ? "active" : ""}
-            onClick={() => setActiveItem("Settings")}
+            onClick={() => handleMenuItemClick("Settings")}
           >
-            <span className="menu-icon">
+            <span className="menuIcon">
               <FiSettings />
             </span>
             Settings
           </li>
         </ul>
-        <div className="sidebar-footer">
+        <div className="sidebarFooter">
           <p
             className={activeItem === "Support" ? "active" : ""}
-            onClick={() => setActiveItem("Support")}
+            onClick={() => handleMenuItemClick("Support")}
           >
-            <span className="menu-icon">
+            <span className="menuIcon">
               <FiPhone />
             </span>
             Support
           </p>
-          <p>
-            <span className="menu-icon">
+          <p onClick={onLogout}>
+            <span className="menuIcon">
               <FiLogOut />
             </span>
             Logout

@@ -8,7 +8,7 @@
   border: 1px solid #dee2e6;
 }
 
-.header-title {
+.headerTitle {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -16,49 +16,49 @@
   margin-bottom: 10px;
 }
 
-.header-top {
+.headerTop {
   display: flex;
   flex-direction: column;
 }
 
-.header-top h1 {
+.headerTop h1 {
   margin: 0;
   font-size: 24px;
 }
 
-.header-title .total-repositories {
+.totalRepositories {
   font-size: 14px;
   color: #6c757d;
   margin-top: 5px;
 }
 
-.header-actions {
+.headerActions {
   display: flex;
   gap: 10px; /* Add space between buttons */
   margin-left: auto; /* Add space below the actions */
 }
 
 @media (max-width: 768px) {
-  .header-title {
+  .headerTitle {
     flex-wrap: wrap;
     margin-right: 0;
   }
 
-  .header-actions {
+  .headerActions {
     margin: 10px 0 0 0;
   }
 }
 
-.search-container {
+.searchContainer {
   max-width: 800px;
 }
 
-.search-input-wrapper {
+.searchInputWrapper {
   position: relative;
   width: 100%;
 }
 
-.search-icon {
+.searchIcon {
   position: absolute;
   top: 50%;
   left: 10px;
@@ -66,7 +66,7 @@
   color: #ced4da;
 }
 
-.search-input {
+.searchInput {
   width: 100%;
   height: 26px;
   padding: 5px 10px 5px 30px;
@@ -74,20 +74,20 @@
   border-radius: 10px;
 }
 
-.refresh-button,
-.add-button {
+.refreshButton,
+.addButton {
   padding: 8px 12px;
   border-radius: 10px;
   cursor: pointer;
 }
 
-.refresh-button {
+.refreshButton {
   background-color: transparent;
   color: #000;
   border: 0.5px solid #000;
 }
 
-.add-button {
+.addButton {
   padding: 8px 12px;
   border-radius: 10px;
   cursor: pointer;
@@ -98,7 +98,7 @@
   border: none;
 }
 
-.action-icon {
+.actionIcon {
   margin-right: 5px;
   vertical-align: middle;
 }
