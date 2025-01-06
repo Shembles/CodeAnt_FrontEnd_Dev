@@ -2,11 +2,25 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Please recieve the app as my answer for the assessment.
+
 ## Available Scripts
 
 In the project directory, you can run:
 
+### `npm install`
+
+After cloning the app, you can run npm install to install all dependencies the app needs to run.
+
 ### `npm start`
+
+run npm start to start the app
+
+Go to /login for desktop and mobile screens of the app login.
+
+And go to /repositories for desktop and mobile screens of the app repositories after login.
+
+Adjust the screens as needed.
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
